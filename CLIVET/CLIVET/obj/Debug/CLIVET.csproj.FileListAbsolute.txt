@@ -1,0 +1,41 @@
+C:\Users\HectorAntonio\Desktop\clivetxxx\CLIVET\CLIVET\bin\Debug\CLIVET.exe.config
+C:\Users\HectorAntonio\Desktop\clivetxxx\CLIVET\CLIVET\bin\Debug\CLIVET.exe
+C:\Users\HectorAntonio\Desktop\clivetxxx\CLIVET\CLIVET\bin\Debug\CLIVET.pdb
+C:\Users\HectorAntonio\Desktop\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.csprojResolveAssemblyReference.cache
+C:\Users\HectorAntonio\Desktop\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.Form1.resources
+C:\Users\HectorAntonio\Desktop\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.Properties.Resources.resources
+C:\Users\HectorAntonio\Desktop\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.csproj.GenerateResource.Cache
+C:\Users\HectorAntonio\Desktop\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.exe
+C:\Users\HectorAntonio\Desktop\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.pdb
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\bin\Debug\CLIVET.exe.config
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.exe
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.pdb
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\bin\Debug\CLIVET.exe
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\bin\Debug\CLIVET.pdb
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.csprojResolveAssemblyReference.cache
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.Captura_Proveedores.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.CapturadeVentas.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.HOME.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.Login.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.Registro_Usuario.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.RegistroClientesYProveedores.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.Form1.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.Properties.Resources.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.Reporte_de_Compras.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetxxx\CLIVET\CLIVET\obj\Debug\CLIVET.csproj.GenerateResource.Cache
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\bin\Debug\CLIVET.exe.config
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.exe
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.pdb
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\bin\Debug\CLIVET.exe
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\bin\Debug\CLIVET.pdb
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.csprojResolveAssemblyReference.cache
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.Captura_Proveedores.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.CapturadeVentas.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.HOME.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.Login.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.Registro_Usuario.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.RegistroClientesYProveedores.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.Form1.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.Properties.Resources.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.Reporte_de_Compras.resources
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.csproj.GenerateResource.Cache
