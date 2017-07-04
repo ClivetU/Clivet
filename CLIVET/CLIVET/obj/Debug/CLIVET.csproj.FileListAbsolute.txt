@@ -39,3 +39,6 @@ C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\
 C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.Properties.Resources.resources
 C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.Reporte_de_Compras.resources
 C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetx\CLIVET\CLIVET\obj\Debug\CLIVET.csproj.GenerateResource.Cache
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetu\CLIVET\CLIVET\bin\Debug\CLIVET.exe.config
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetu\CLIVET\CLIVET\obj\Debug\CLIVET.exe
+C:\Users\ernesto\Documents\UNIVERSIDAD\6 cuatri\clivetxxx\clivetu\CLIVET\CLIVET\obj\Debug\CLIVET.pdb
