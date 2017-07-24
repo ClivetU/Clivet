@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro_Usuario));
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,7 +56,10 @@
             this.btncerrar = new System.Windows.Forms.Button();
             this.btnminimizar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.pnUsuarios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -63,7 +67,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(41, 230);
+            this.label4.Location = new System.Drawing.Point(47, 154);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 13);
             this.label4.TabIndex = 7;
@@ -74,7 +78,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(82, 131);
+            this.label1.Location = new System.Drawing.Point(353, 74);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 6;
@@ -84,14 +88,14 @@
             // 
             this.cmblvseguridad.CausesValidation = false;
             this.cmblvseguridad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmblvseguridad.Location = new System.Drawing.Point(146, 227);
+            this.cmblvseguridad.Location = new System.Drawing.Point(152, 151);
             this.cmblvseguridad.Name = "cmblvseguridad";
             this.cmblvseguridad.Size = new System.Drawing.Size(158, 21);
             this.cmblvseguridad.TabIndex = 15;
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(146, 128);
+            this.txtnombre.Location = new System.Drawing.Point(417, 71);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(158, 20);
             this.txtnombre.TabIndex = 4;
@@ -101,7 +105,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(54, 194);
+            this.label3.Location = new System.Drawing.Point(325, 154);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 13);
             this.label3.TabIndex = 13;
@@ -109,7 +113,7 @@
             // 
             // txtsapellido
             // 
-            this.txtsapellido.Location = new System.Drawing.Point(146, 191);
+            this.txtsapellido.Location = new System.Drawing.Point(417, 151);
             this.txtsapellido.Name = "txtsapellido";
             this.txtsapellido.Size = new System.Drawing.Size(158, 20);
             this.txtsapellido.TabIndex = 12;
@@ -119,7 +123,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(54, 165);
+            this.label5.Location = new System.Drawing.Point(325, 114);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 13);
             this.label5.TabIndex = 11;
@@ -127,7 +131,7 @@
             // 
             // txtpapellido
             // 
-            this.txtpapellido.Location = new System.Drawing.Point(146, 162);
+            this.txtpapellido.Location = new System.Drawing.Point(417, 111);
             this.txtpapellido.Name = "txtpapellido";
             this.txtpapellido.Size = new System.Drawing.Size(158, 20);
             this.txtpapellido.TabIndex = 10;
@@ -137,7 +141,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(77, 265);
+            this.label6.Location = new System.Drawing.Point(85, 111);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 13);
             this.label6.TabIndex = 15;
@@ -145,7 +149,7 @@
             // 
             // txtcontraseña
             // 
-            this.txtcontraseña.Location = new System.Drawing.Point(146, 262);
+            this.txtcontraseña.Location = new System.Drawing.Point(154, 108);
             this.txtcontraseña.Name = "txtcontraseña";
             this.txtcontraseña.Size = new System.Drawing.Size(158, 20);
             this.txtcontraseña.TabIndex = 17;
@@ -165,7 +169,7 @@
             // 
             // btnmodificar
             // 
-            this.btnmodificar.Location = new System.Drawing.Point(28, 293);
+            this.btnmodificar.Location = new System.Drawing.Point(191, 191);
             this.btnmodificar.Name = "btnmodificar";
             this.btnmodificar.Size = new System.Drawing.Size(75, 36);
             this.btnmodificar.TabIndex = 20;
@@ -175,7 +179,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(28, 335);
+            this.btnEliminar.Location = new System.Drawing.Point(339, 189);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 36);
             this.btnEliminar.TabIndex = 25;
@@ -194,7 +198,7 @@
             // 
             // btninicio
             // 
-            this.btninicio.Location = new System.Drawing.Point(423, 335);
+            this.btninicio.Location = new System.Drawing.Point(613, 189);
             this.btninicio.Name = "btninicio";
             this.btninicio.Size = new System.Drawing.Size(75, 36);
             this.btninicio.TabIndex = 30;
@@ -204,7 +208,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(229, 288);
+            this.button1.Location = new System.Drawing.Point(50, 189);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 36);
             this.button1.TabIndex = 18;
@@ -218,7 +222,7 @@
             this.pnUsuarios.Controls.Add(this.btnUsuario3);
             this.pnUsuarios.Controls.Add(this.btnUsuario2);
             this.pnUsuarios.Controls.Add(this.btnUsuario1);
-            this.pnUsuarios.Location = new System.Drawing.Point(340, 167);
+            this.pnUsuarios.Location = new System.Drawing.Point(155, 91);
             this.pnUsuarios.Name = "pnUsuarios";
             this.pnUsuarios.Size = new System.Drawing.Size(147, 95);
             this.pnUsuarios.TabIndex = 2;
@@ -268,7 +272,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(337, 128);
+            this.label8.Location = new System.Drawing.Point(102, 71);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 80;
@@ -276,7 +280,7 @@
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(340, 147);
+            this.txtusuario.Location = new System.Drawing.Point(155, 71);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(147, 20);
             this.txtusuario.TabIndex = 1;
@@ -286,7 +290,7 @@
             // 
             this.btncerrar.Enabled = false;
             this.btncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncerrar.Location = new System.Drawing.Point(484, 2);
+            this.btncerrar.Location = new System.Drawing.Point(697, 3);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(26, 17);
             this.btncerrar.TabIndex = 83;
@@ -299,7 +303,7 @@
             // 
             this.btnminimizar.Enabled = false;
             this.btnminimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnminimizar.Location = new System.Drawing.Point(436, 2);
+            this.btnminimizar.Location = new System.Drawing.Point(651, 4);
             this.btnminimizar.Name = "btnminimizar";
             this.btnminimizar.Size = new System.Drawing.Size(30, 17);
             this.btnminimizar.TabIndex = 84;
@@ -315,11 +319,42 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(131, 59);
+            this.label9.Location = new System.Drawing.Point(240, 22);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(202, 25);
             this.label9.TabIndex = 84;
             this.label9.Text = "Control de Usuarios";
+            // 
+            // dgvUsuarios
+            // 
+            this.dgvUsuarios.AllowUserToAddRows = false;
+            this.dgvUsuarios.AllowUserToDeleteRows = false;
+            this.dgvUsuarios.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvUsuarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvUsuarios.BackgroundColor = System.Drawing.Color.LightSalmon;
+            this.dgvUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuarios.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvUsuarios.Location = new System.Drawing.Point(50, 229);
+            this.dgvUsuarios.Name = "dgvUsuarios";
+            this.dgvUsuarios.ReadOnly = true;
+            this.dgvUsuarios.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dgvUsuarios.RowHeadersVisible = false;
+            this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvUsuarios.Size = new System.Drawing.Size(638, 158);
+            this.dgvUsuarios.TabIndex = 85;
+            this.dgvUsuarios.SelectionChanged += new System.EventHandler(this.dgvUsuarios_SelectionChanged);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(500, 189);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 36);
+            this.btnLimpiar.TabIndex = 86;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // Registro_Usuario
             // 
@@ -327,7 +362,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(510, 383);
+            this.ClientSize = new System.Drawing.Size(726, 399);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.btnminimizar);
@@ -357,6 +394,7 @@
             this.Text = "Registro_Usuario";
             this.Load += new System.EventHandler(this.Registro_Usuario_Load);
             this.pnUsuarios.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,5 +428,7 @@
         private System.Windows.Forms.Button btnUsuario3;
         private System.Windows.Forms.Button btnUsuario2;
         private System.Windows.Forms.Button btnUsuario1;
+        private System.Windows.Forms.DataGridView dgvUsuarios;
+        internal System.Windows.Forms.Button btnLimpiar;
     }
 }

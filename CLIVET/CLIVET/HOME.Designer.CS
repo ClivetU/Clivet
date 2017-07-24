@@ -43,11 +43,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btncerrar = new System.Windows.Forms.Button();
             this.btnminimizar = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbRegistrarUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -55,7 +58,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(507, 321);
+            this.label1.Location = new System.Drawing.Point(105, 385);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(199, 18);
             this.label1.TabIndex = 18;
@@ -66,7 +69,7 @@
             this.lblCapturadeDatos.AutoSize = true;
             this.lblCapturadeDatos.BackColor = System.Drawing.Color.Transparent;
             this.lblCapturadeDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCapturadeDatos.Location = new System.Drawing.Point(290, 321);
+            this.lblCapturadeDatos.Location = new System.Drawing.Point(454, 194);
             this.lblCapturadeDatos.Name = "lblCapturadeDatos";
             this.lblCapturadeDatos.Size = new System.Drawing.Size(164, 36);
             this.lblCapturadeDatos.TabIndex = 17;
@@ -77,7 +80,7 @@
             this.lblRegistro.AutoSize = true;
             this.lblRegistro.BackColor = System.Drawing.Color.Transparent;
             this.lblRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistro.Location = new System.Drawing.Point(70, 321);
+            this.lblRegistro.Location = new System.Drawing.Point(122, 194);
             this.lblRegistro.Name = "lblRegistro";
             this.lblRegistro.Size = new System.Drawing.Size(147, 18);
             this.lblRegistro.TabIndex = 16;
@@ -109,7 +112,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(294, 176);
+            this.pictureBox3.Location = new System.Drawing.Point(458, 49);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(134, 141);
             this.pictureBox3.TabIndex = 13;
@@ -120,7 +123,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(72, 176);
+            this.pictureBox2.Location = new System.Drawing.Point(124, 49);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(128, 141);
             this.pictureBox2.TabIndex = 12;
@@ -131,7 +134,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(527, 176);
+            this.pictureBox1.Location = new System.Drawing.Point(125, 240);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(132, 141);
             this.pictureBox1.TabIndex = 11;
@@ -211,6 +214,29 @@
             this.btnminimizar.Visible = false;
             this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(460, 240);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(132, 141);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 28;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(454, 385);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(172, 18);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Consulta de Reportes";
+            // 
             // HOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,6 +244,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(740, 508);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.btnminimizar);
             this.Controls.Add(this.lbsucursal);
@@ -241,6 +269,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,5 +290,7 @@
         internal System.Windows.Forms.Label label5;
         internal System.Windows.Forms.Button btncerrar;
         internal System.Windows.Forms.Button btnminimizar;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label2;
     }
 }

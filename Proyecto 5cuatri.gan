@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-06-13" view-index="0" gantt-divider-location="468" resource-divider-location="300" version="2.7.2" locale="es">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-06-25" view-index="0" gantt-divider-location="468" resource-divider-location="300" version="2.7.2" locale="es">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd3" name="Nombre" width="63" order="0"/>
@@ -35,7 +35,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="66" name="Proyecto" color="#000000" meeting="false" start="2017-01-27" duration="146" complete="0" expand="true">
+        <task id="66" name="Proyecto" color="#000000" meeting="false" start="2017-01-27" duration="166" complete="0" expand="true">
             <task id="67" name="Buscar Empresa para hacer Base de Datos" color="#cccc00" meeting="false" start="2017-01-27" duration="3" complete="0" priority="2" expand="true"/>
             <task id="68" name="Investigación Preliminar" color="#990099" meeting="false" start="2017-01-30" duration="3" complete="0" expand="true">
                 <task id="69" name="Objetivo del Proyecto" color="#00cc00" meeting="false" start="2017-01-30" duration="1" complete="0" expand="true"/>
@@ -142,7 +142,22 @@
                     <task id="326" name="DataGrid de Compra/Venta" color="#cc0000" meeting="false" start="2017-06-21" duration="1" complete="0" expand="true"/>
                     <task id="325" name="Registro de Compra/Venta" color="#cc0000" meeting="false" start="2017-06-21" duration="1" complete="0" expand="true"/>
                 </task>
-                <task id="321" name="Coso de Prueba" color="#cc0000" meeting="false" start="2017-06-20" duration="1" complete="0" expand="true"/>
+                <task id="321" name="Coso de Prueba" color="#cc0000" meeting="false" start="2017-06-21" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="339" name="Proyecto 5" meeting="false" start="2017-07-04" duration="2" complete="0" expand="true">
+                <task id="340" name="Reporte de Proveedores" color="#003399" meeting="false" start="2017-07-04" duration="1" complete="0" expand="true"/>
+                <task id="341" name="Reporte de Clientes" color="#003399" meeting="false" start="2017-07-04" duration="1" complete="0" expand="true"/>
+                <task id="342" name="Casos de Prueba" color="#cc0000" meeting="false" start="2017-07-05" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="343" name="Proyecto 6" meeting="false" start="2017-07-05" duration="7" complete="0" expand="true">
+                <task id="346" name="Proceso de Instalacion del Programa" color="#003399" meeting="false" start="2017-07-05" duration="1" complete="0" expand="true"/>
+                <task id="351" name="Actualización y modificación de BD" color="#003399" meeting="false" start="2017-07-07" duration="1" complete="0" expand="true"/>
+                <task id="344" name="Reporte de Compra/Venta (Corrección)" color="#cc0000" meeting="false" start="2017-07-09" duration="1" complete="0" expand="true"/>
+                <task id="345" name="Consulta Movimiento" color="#cc0000" meeting="false" start="2017-07-09" duration="1" complete="0" expand="true"/>
+                <task id="347" name="Insertar/Eliminat/Modificar Clientes (corrección)" color="#cc0000" meeting="false" start="2017-07-10" duration="1" complete="0" expand="true"/>
+                <task id="348" name="Insertar/Eliminat/Modificar Proveedores (corrección)" color="#cc0000" meeting="false" start="2017-07-10" duration="1" complete="0" expand="true"/>
+                <task id="349" name="Insertar/Eliminat/Modificar Productos (corrección)" color="#cc0000" meeting="false" start="2017-07-10" duration="1" complete="0" expand="true"/>
+                <task id="350" name="DataGrid de Compra/Venta (corrección)" color="#cc0000" meeting="false" start="2017-07-11" duration="1" complete="0" expand="true"/>
             </task>
         </task>
     </tasks>
@@ -219,6 +234,13 @@
         <allocation task-id="321" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="326" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="325" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="342" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="344" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="345" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="347" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="348" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="349" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="350" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="67" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="74" resource-id="2" function="Default:0" responsible="true" load="50.0"/>
         <allocation task-id="76" resource-id="2" function="Default:0" responsible="true" load="50.0"/>
@@ -248,6 +270,10 @@
         <allocation task-id="312" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="317" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="338" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="340" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="341" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="351" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="346" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
     </allocations>
     <vacations/>
     <taskdisplaycolumns>

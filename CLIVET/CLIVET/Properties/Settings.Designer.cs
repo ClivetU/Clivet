@@ -26,6 +26,17 @@ namespace CLIVET.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=NETO\\SQLEXPRESS;Initial Catalog=Clivet;User ID=sa;Password=Password12" +
+            "3")]
+        public string ClivetConnectionString {
+            get {
+                return ((string)(this["ClivetConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Server=NETO\\SQLEXPRESS;Database=Clivet;Trusted_Connection=True;\n")]
         public string ConnectionClivet {
             get {

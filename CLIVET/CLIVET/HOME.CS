@@ -72,5 +72,12 @@ namespace CLIVET
             l.Show();
             this.Close();
         }
+
+        private void pictureBox5_Click_1(object sender, EventArgs e)
+        {
+            Reportes r = new Reportes(User, nivel);
+            r.Show();
+            this.Close();
+        }
     }
 }

@@ -1,0 +1,8 @@
+Captura Proveedores: linea(108-116)
+CapturadeVentas: linea(105-113)
+Registro Usuario: lineas(34 / 125-130 / 173-218 / 224 / 232-236 / 240-244 / 248-252 / 256-260)
+Reporte de Compras: lienas(21-22 / 103-111)
+Reporte de Ventas: lineas(21-22 / 127-140)
+
+sql: ejecutar PA-Clivet
+

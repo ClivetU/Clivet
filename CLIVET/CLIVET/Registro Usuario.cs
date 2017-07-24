@@ -17,11 +17,14 @@ namespace CLIVET
         public Registro_Usuario(string user, int LVL)
         {
             InitializeComponent();
+            inicio = 0;
             User = user;
             NivelesAcces();
             nivel = LVL;
             pnUsuarios.Hide();
+            ModificarDgv();
         }
+        private int inicio;
         private string query = "";
         private string estado = "";
         DataTable dt = new DataTable();
@@ -31,6 +34,7 @@ namespace CLIVET
         private string btuser2 = "";
         private string btuser3 = "";
         private string btuser4 = "";
+        private bool botonPrueba = false;
 
         private void NivelesAcces()
         {
@@ -71,6 +75,12 @@ namespace CLIVET
         }
 
 
+        private void ModificarDgv()
+        {
+            query = "EXECUTE ObtenUsuario;";
+            dgvUsuarios.DataSource = Connection.getData(query);
+        }
+
         private void Registro_Usuario_Load(object sender, EventArgs e)
         {
 
@@ -104,9 +114,10 @@ namespace CLIVET
                 MessageBox.Show(estado);
                 if (estado == "Se registro correctamente")
                 {
-                    HOME l = new HOME(User,nivel);
-                    l.Show();
-                    this.Hide();
+                    ModificarDgv();
+                    //HOME l = new HOME(User,nivel);
+                    //l.Show();
+                    //this.Hide();
                 }
             }
             else
@@ -122,6 +133,12 @@ namespace CLIVET
                 query = "exec EliminarUsuario '" + txtusuario.Text + "'";
                 estado=Connection.getData(query).Rows[0]["Estado"].ToString();
                 MessageBox.Show(estado);
+                ModificarDgv();
+                txtusuario.Text = "";
+                txtnombre.Text = "";
+                txtpapellido.Text = "";
+                txtsapellido.Text = "";
+                txtcontraseña.Text = "";                
             }
             else { MessageBox.Show("No ha elejido un usuario"); }
         }
@@ -165,48 +182,53 @@ namespace CLIVET
 
         private void txtusuario_TextChanged(object sender, EventArgs e)
         {
-            pnUsuarios.Show();
-            if(txtusuario.Text=="")
+            
+            if (botonPrueba == false)
             {
-                pnUsuarios.Hide();
-            }
-            UsuariosBuscar(txtusuario.Text);
-            btnUsuario1.Text = btuser1;
-            btnUsuario2.Text = btuser2;
-            btnUsuario3.Text = btuser3;
-            btnUsuario4.Text = btuser4;
-            if(btuser1=="No hay usuario")
-            {
-                btnUsuario1.Enabled = false;
-            }
-            else
-            {
-                btnUsuario1.Enabled = true;
-            }
-            if (btuser2 == "No hay usuario")
-            {
-                btnUsuario2.Enabled = false;
-            }
-            else
-            {
-                btnUsuario2.Enabled = true;
-            }
-            if (btuser3 == "No hay usuario")
-            {
-                btnUsuario3.Enabled = false;
-            }
-            else
-            {
-                btnUsuario3.Enabled = true;
-            }
-            if (btuser4 == "No hay usuario")
-            {
-                btnUsuario4.Enabled = false;
-            }
-            else
-            {
-                btnUsuario4.Enabled = true;
-            }
+                //pnUsuarios.Show();
+                if (txtusuario.Text == "")
+                {
+                    pnUsuarios.Hide();
+                }
+                UsuariosBuscar(txtusuario.Text);
+                btnUsuario1.Text = btuser1;
+                btnUsuario2.Text = btuser2;
+                btnUsuario3.Text = btuser3;
+                btnUsuario4.Text = btuser4;
+                if (btuser1 == "No hay usuario")
+                {
+                    btnUsuario1.Enabled = false;
+                }
+                else
+                {
+                    btnUsuario1.Enabled = true;
+                }
+                if (btuser2 == "No hay usuario")
+                {
+                    btnUsuario2.Enabled = false;
+                }
+                else
+                {
+                    btnUsuario2.Enabled = true;
+                }
+                if (btuser3 == "No hay usuario")
+                {
+                    btnUsuario3.Enabled = false;
+                }
+                else
+                {
+                    btnUsuario3.Enabled = true;
+                }
+                if (btuser4 == "No hay usuario")
+                {
+                    btnUsuario4.Enabled = false;
+                }
+                else
+                {
+                    btnUsuario4.Enabled = true;
+                }
+            
+        }
         }
         private void SelectUser(string use)
         {
@@ -221,22 +243,34 @@ namespace CLIVET
 
         private void btnUsuario1_Click(object sender, EventArgs e)
         {
+            botonPrueba = true;
             SelectUser(btnUsuario1.Text);
+            botonPrueba = false;
+            pnUsuarios.Hide();
         }
 
         private void btnUsuario2_Click(object sender, EventArgs e)
         {
+            botonPrueba = true;
             SelectUser(btnUsuario2.Text);
+            botonPrueba = false;
+            pnUsuarios.Hide();
         }
 
         private void btnUsuario3_Click(object sender, EventArgs e)
         {
+            botonPrueba = true;
             SelectUser(btnUsuario3.Text);
+            botonPrueba = false;
+            pnUsuarios.Hide();
         }
 
         private void btnUsuario4_Click(object sender, EventArgs e)
         {
+            botonPrueba = true;
             SelectUser(btnUsuario4.Text);
+            botonPrueba = false;
+            pnUsuarios.Hide();
         }
 
 
@@ -248,15 +282,44 @@ namespace CLIVET
                 MessageBox.Show(estado);
                 if (estado == "El usuario se ha actualizado Correctamente")
                 {
-                    HOME l = new HOME(User, nivel);
-                    l.Show();
-                    this.Close();
+                    ModificarDgv();
+                    //HOME l = new HOME(User, nivel);
+                    //l.Show();
+                    //this.Close();
                 }
             }
             else
             {
                 MessageBox.Show("Faltan campos de llenar o estan erroneos");
             }
+        }
+
+        private void dgvUsuarios_SelectionChanged(object sender, EventArgs e)
+        {
+            if (inicio == 0|| inicio == 1|| inicio == 2)
+                inicio++;
+            else
+            { 
+            foreach (DataGridViewRow row in dgvUsuarios.SelectedRows)
+            {
+                txtusuario.Text = row.Cells[0].Value.ToString();
+                txtcontraseña.Text = row.Cells[1].Value.ToString();
+                cmblvseguridad.Text = row.Cells[2].Value.ToString();
+                txtnombre.Text = row.Cells[3].Value.ToString();
+                txtpapellido.Text = row.Cells[4].Value.ToString();
+                txtsapellido.Text = row.Cells[5].Value.ToString();
+            }
+        }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtusuario.Text = "";
+            txtcontraseña.Text = "";
+            txtnombre.Text = "";
+            txtpapellido.Text = "";
+            txtsapellido.Text = "";
+            cmblvseguridad.Text = "Administrador";
         }
     }
 }

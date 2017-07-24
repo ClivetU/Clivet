@@ -41,16 +41,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.lbusuario = new System.Windows.Forms.Label();
-            this.lbsucursal = new System.Windows.Forms.Label();
             this.btnCapCompras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btninicio
             // 
-            this.btninicio.Location = new System.Drawing.Point(644, 418);
+            this.btninicio.Location = new System.Drawing.Point(736, 372);
             this.btninicio.Name = "btninicio";
             this.btninicio.Size = new System.Drawing.Size(75, 36);
             this.btninicio.TabIndex = 16;
@@ -60,18 +58,26 @@
             // 
             // combofiltro
             // 
+            this.combofiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combofiltro.FormattingEnabled = true;
-            this.combofiltro.Location = new System.Drawing.Point(354, 168);
+            this.combofiltro.Items.AddRange(new object[] {
+            "Todo",
+            "Cliente",
+            "Usuario",
+            "Fecha",
+            "Producto"});
+            this.combofiltro.Location = new System.Drawing.Point(391, 137);
             this.combofiltro.Name = "combofiltro";
             this.combofiltro.Size = new System.Drawing.Size(165, 21);
             this.combofiltro.TabIndex = 12;
+            this.combofiltro.SelectedIndexChanged += new System.EventHandler(this.combofiltro_SelectedIndexChanged);
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
             this.Label2.BackColor = System.Drawing.Color.Transparent;
             this.Label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Label2.Location = new System.Drawing.Point(298, 171);
+            this.Label2.Location = new System.Drawing.Point(335, 140);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(53, 13);
             this.Label2.TabIndex = 11;
@@ -79,27 +85,34 @@
             // 
             // DataGridView1
             // 
-            this.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DataGridView1.AllowUserToAddRows = false;
+            this.DataGridView1.AllowUserToDeleteRows = false;
+            this.DataGridView1.AllowUserToResizeColumns = false;
+            this.DataGridView1.AllowUserToResizeRows = false;
+            this.DataGridView1.BackgroundColor = System.Drawing.Color.LightSalmon;
             this.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView1.Location = new System.Drawing.Point(48, 211);
+            this.DataGridView1.Location = new System.Drawing.Point(12, 179);
             this.DataGridView1.Name = "DataGridView1";
-            this.DataGridView1.Size = new System.Drawing.Size(622, 191);
+            this.DataGridView1.RowHeadersVisible = false;
+            this.DataGridView1.Size = new System.Drawing.Size(811, 183);
             this.DataGridView1.TabIndex = 10;
             // 
             // btnbusqueda
             // 
-            this.btnbusqueda.Location = new System.Drawing.Point(537, 168);
+            this.btnbusqueda.Location = new System.Drawing.Point(574, 137);
             this.btnbusqueda.Name = "btnbusqueda";
             this.btnbusqueda.Size = new System.Drawing.Size(84, 25);
             this.btnbusqueda.TabIndex = 14;
             this.btnbusqueda.Text = "Busqueda";
             this.btnbusqueda.UseVisualStyleBackColor = true;
+            this.btnbusqueda.Click += new System.EventHandler(this.btnbusqueda_Click);
             // 
             // txtbusqueda
             // 
-            this.txtbusqueda.Location = new System.Drawing.Point(145, 169);
+            this.txtbusqueda.Enabled = false;
+            this.txtbusqueda.Location = new System.Drawing.Point(182, 138);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.Size = new System.Drawing.Size(147, 20);
             this.txtbusqueda.TabIndex = 8;
@@ -117,7 +130,7 @@
             // 
             this.btncerrar.Enabled = false;
             this.btncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncerrar.Location = new System.Drawing.Point(688, 3);
+            this.btncerrar.Location = new System.Drawing.Point(797, 12);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(26, 17);
             this.btncerrar.TabIndex = 18;
@@ -130,7 +143,7 @@
             // 
             this.btnminimizar.Enabled = false;
             this.btnminimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnminimizar.Location = new System.Drawing.Point(640, 3);
+            this.btnminimizar.Location = new System.Drawing.Point(749, 12);
             this.btnminimizar.Name = "btnminimizar";
             this.btnminimizar.Size = new System.Drawing.Size(30, 17);
             this.btnminimizar.TabIndex = 19;
@@ -145,7 +158,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(81, 171);
+            this.label3.Location = new System.Drawing.Point(118, 140);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 16;
@@ -168,52 +181,28 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(12, 418);
+            this.label5.Location = new System.Drawing.Point(9, 395);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 13);
             this.label5.TabIndex = 18;
             this.label5.Text = "Usuario:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(12, 441);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 13);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Sucursal:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
             // lbusuario
             // 
             this.lbusuario.AutoSize = true;
             this.lbusuario.BackColor = System.Drawing.Color.Transparent;
             this.lbusuario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbusuario.Location = new System.Drawing.Point(69, 418);
+            this.lbusuario.Location = new System.Drawing.Point(66, 395);
             this.lbusuario.Name = "lbusuario";
             this.lbusuario.Size = new System.Drawing.Size(27, 13);
             this.lbusuario.TabIndex = 20;
             this.lbusuario.Text = "xxxx";
             this.lbusuario.Click += new System.EventHandler(this.lbusuario_Click);
             // 
-            // lbsucursal
-            // 
-            this.lbsucursal.AutoSize = true;
-            this.lbsucursal.BackColor = System.Drawing.Color.Transparent;
-            this.lbsucursal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbsucursal.Location = new System.Drawing.Point(69, 441);
-            this.lbsucursal.Name = "lbsucursal";
-            this.lbsucursal.Size = new System.Drawing.Size(27, 13);
-            this.lbsucursal.TabIndex = 21;
-            this.lbsucursal.Text = "yyyy";
-            this.lbsucursal.Click += new System.EventHandler(this.lbsucursal_Click);
-            // 
             // btnCapCompras
             // 
-            this.btnCapCompras.Location = new System.Drawing.Point(563, 418);
+            this.btnCapCompras.Location = new System.Drawing.Point(655, 372);
             this.btnCapCompras.Name = "btnCapCompras";
             this.btnCapCompras.Size = new System.Drawing.Size(75, 36);
             this.btnCapCompras.TabIndex = 15;
@@ -227,11 +216,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(731, 469);
+            this.ClientSize = new System.Drawing.Size(835, 426);
             this.Controls.Add(this.btnCapCompras);
-            this.Controls.Add(this.lbsucursal);
             this.Controls.Add(this.lbusuario);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -269,9 +256,7 @@
         internal System.Windows.Forms.Label label3;
         internal System.Windows.Forms.Label label4;
         internal System.Windows.Forms.Label label5;
-        internal System.Windows.Forms.Label label6;
         internal System.Windows.Forms.Label lbusuario;
-        internal System.Windows.Forms.Label lbsucursal;
         internal System.Windows.Forms.Button btnCapCompras;
     }
 }
